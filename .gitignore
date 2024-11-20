@@ -1,3 +1,6 @@
 node_modules
 chave-api.txt
 .DS_store
+
+MongoDB username/password: douglasMartins19/Ideasarebulletproof19!
+Connection string: mongodb+srv://douglasMartins19:Ideasarebulletproof19!@cluster0.ut5cg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0

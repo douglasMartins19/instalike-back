@@ -30,12 +30,12 @@ app.get("/posts", (req, res) => {          //get para buscar algo no servidor, d
 })
 
 function buscarPostPorID(id) {             //realizando busca por ID de objeto
-    return posts.findIndex(() => {         //método do js para encontrar um dado pelo índice
-        return posts.id === Number(id)     //compara o valor da propriedade id com o parâmetro id da função, e já converte para número
+    return posts.findIndex((post) => {         //método do js para encontrar um dado pelo índice
+        return post.id === Number(id)     //compara o valor da propriedade id com o parâmetro id da função, e já converte para número
     })
 }
 
 app.get("/posts/:id", (req, res) => {                    //identificando os objetos da array na url, usando "/:id"    
     const index = buscarPostPorID(req.params.id)         //requisitando o parâmetro id adicionado na linha acima
-    res.status(200).send(posts[index]);                  //retorna a posição (index) do objeto da array (posts)
+    res.status(200).json(posts[index]);                  //retorna a posição (index) do objeto da array (posts)
 })
