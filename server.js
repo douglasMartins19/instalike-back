@@ -8,3 +8,4 @@ routes(app);
 app.listen(3000, () => {      //diz para o servidor ficar "escutando" e adiciona a porta local 3000 -> http://localhost:3000
     console.log("Servidor escutando...");
 });
+
